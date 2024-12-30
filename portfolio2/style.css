@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    margin: 200px 100px;
+}
+
+main p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.menu{
+    /* background-color: red; */
+    font-size: 3rem;
+}
+
+.contactinfo{
+    /* background-color: red; */
+}
